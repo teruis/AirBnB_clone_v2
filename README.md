@@ -1,50 +1,68 @@
-**Overview**
 
-This project is the first step in building a fully functional AirBnB clone web application. It involves creating a command-line interface to manage AirBnB objects using the cmd module in Python.
+# 0x02. AirBnB Clone - MySQL | ALX Africa Intranet
 
-**Learning Objectives**
+## Overview
 
-By completing this project, you will be able to:
+This project, 0x02. AirBnB Clone - MySQL, is part of the ALX Africa Intranet's ongoing second chance project. It focuses on developing an AirBnB clone using Python, OOP, and MySQL. The project aims to implement an Object-Relational Mapping (ORM) with SQLAlchemy, manage back-end development, handle SQL databases, and employ environment variables effectively.
 
-* Understand the concept of Python packages
-* Create a command-line interface using the cmd module
-* Implement unit testing to ensure code quality
-* Serialize and deserialize Python objects
-* Work with JSON files and manage datetime objects
+### Team
+- **Guillaume**
+- **Abdelali Laaguidi**
+- **Mohamed Assouli**
 
-**Tasks**
+## Project Details
 
-1. Create a README.md file and an AUTHORS file
-2. Ensure your code complies with pep8 style guidelines
-3. Implement unit tests for all modules, classes, and functions
-4. Create a BaseModel class with common attributes and methods
-5. Add functionality to recreate a class instance from a dictionary representation
-6. Implement a FileStorage class to manage persistent file storage
-7. Update the console with basic functionality to quit, handle empty lines and ^D
-8. Add methods to create, destroy, show, and update stored data
-9. Create additional classes for User, Place, City, Amenity, State, and Review
-10. Update the console and file storage system to handle all classes dynamically
+### Learning Objectives
+By the end of this project, the goals include understanding and implementing:
+- Unit testing in large projects
+- Usage of `*args` and `**kwargs`
+- Handling named arguments in functions
+- Creating and managing MySQL databases and users
+- Mapping Python Classes to MySQL tables using ORM
+- Handling different storage engines within the same codebase
+- Effective utilization of environment variables
 
-**Running the Console**
+### Requirements
+- **Python Scripts**
+  - Usage of Ubuntu 20.04 LTS with Python3 (version 3.8.5)
+  - Following PEP8 coding style guidelines
+  - Extensive documentation in modules, classes, and functions
+  - Execution of test files using the `unittest` module
+- **SQL Scripts**
+  - Execution on Ubuntu 20.04 LTS using MySQL 8.0 and SQLAlchemy version 1.4.x
+  - Properly commented SQL queries and files
+- **GitHub**
+  - One project repository per group following specific guidelines
 
-1. Clone the repository
-2. Locate the "console.py" file
-3. Run the file using the command: ./console.py
-4. You will be prompted with the "(hbnb)" prompt
+### Tasks Overview
+The project comprises several tasks, including:
+- Forking the existing codebase and updating the repository name
+- Implementing bug-free unittests and PEP8 compliance
+- Enhancing the console's functionality to allow object creation with given parameters
+- Setting up MySQL databases for development and testing
+- Implementing deletion of objects in the FileStorage engine
+- Transitioning from FileStorage to DBStorage using SQLAlchemy
 
-**Example Commands**
+## Project Structure
 
-* **create BaseModel:** Creates a new BaseModel instance
-* **show BaseModel <_id>:** Shows an existing BaseModel instance
-* **destroy BaseModel <_id>:** Destroys an existing BaseModel instance
-* **update BaseModel <_id> <attribute_name> <attribute_value>:** Updates an existing BaseModel instance
-* **quit:** Exits the console
+### Files and Directories
+- **`console.py`**: Handles command interpretation
+- **`models/`**: Contains Python classes for the application models
+- **`tests/`**: Includes all the unit test files
+- **`setup_mysql_dev.sql`**: Script for preparing MySQL server for development
+- **`setup_mysql_test.sql`**: Script for preparing MySQL server for testing
+- **`models/engine/file_storage.py`**: Contains methods related to FileStorage engine
 
-**Alternative Syntax**
+### Execution and Testing
+- Unit tests canbe executed using `python3 -m unittest discover tests`
+- Individual tests can be run using `python3 -m unittest tests/test_models/test_base_model.py`
 
-You can use alternative syntax for some commands:
+## Conclusion
 
-* **<class_name>.all():** Shows all objects of the given class
-* **<class_name>.destroy(<_id>):** Destroys an existing object of the given class
-* **<class_name>.update(<_id>, <attribute_name>, <attribute_value>):** Updates an existing object of the given class
-* **<class_name>.update(<_id>, <dictionary>):** Updates an existing object of the given class using a dictionary of attribute-value pairs
+This project involves developing an AirBnB clone using Python, MySQL, and SQLAlchemy. It focuses on various aspects of back-end development, testing, SQL database management, and environment variable usage. The tasks range from forking the codebase to transitioning the storage engine from FileStorage to DBStorage using SQLAlchemy.
+
+For more detailed information about each task and its execution, refer to the respective task files in the project repository.
+
+---
+
+Feel free to tailor this README file according to your specific project details, updates, and additional information as needed!
