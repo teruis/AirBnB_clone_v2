@@ -6,7 +6,6 @@
 This project, 0x02. AirBnB Clone - MySQL, is part of the ALX Africa Intranet's ongoing second chance project. It focuses on developing an AirBnB clone using Python, OOP, and MySQL. The project aims to implement an Object-Relational Mapping (ORM) with SQLAlchemy, manage back-end development, handle SQL databases, and employ environment variables effectively.
 
 ### Team
-- **Guillaume**
 - **Abdelali Laaguidi**
 - **Mohamed Assouli**
 
